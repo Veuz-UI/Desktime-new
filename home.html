@@ -15,7 +15,7 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body data-sidebar="dark" data-layout-mode="light" class="sidebar-enable vertical-collpsed">
+<body data-sidebar="dark" data-layout-mode="light" >
     <div class="loader" id="loading">
         <div class="spinner"></div>
     </div>
@@ -162,8 +162,20 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect">
+                                <i class="bx bx-moon"></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect">
+                                <i class="bx bx-cog bx-spin"></i>
+                            </button>
+                        </div>
+    
+                        <div class="dropdown d-inline-block profile-dropdown">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
@@ -173,15 +185,40 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
-                                <a class="dropdown-item" href="profile.html"><i class="bx bx-user font-size-16 align-middle me-1"></i>
-                                    <span key="t-profile">Profile</span></a>
-                                <a class="dropdown-item d-block" href="#"><i
-                                        class="bx bx-wrench font-size-16 align-middle me-1"></i> <span
-                                        key="t-settings">Settings</span></a>
+                                <a class="dropdown-item" href="profile.html">
+                                    <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 16C1 12.7783 3.68629 10.1667 7 10.1667C10.3137 10.1667 13 12.7783 13 16M10.4286 4.33333C10.4286 6.17428 8.89351 7.66667 7 7.66667C5.10645 7.66667 3.57143 6.17428 3.57143 4.33333C3.57143 2.49238 5.10645 1 7 1C8.89351 1 10.4286 2.49238 10.4286 4.33333Z" stroke="#A3AED0" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <span key="t-profile">Manage Profile</span></a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item d-block" href="#">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 9.5C5 9.22385 4.77614 9 4.5 9C4.22386 9 4 9.22385 4 9.5C4 9.77615 4.22386 10 4.5 10C4.77614 10 5 9.77615 5 9.5Z" fill="#A3AED0"/>
+                                        <path d="M7 9.5C7 9.22385 6.77614 9 6.5 9C6.22386 9 6 9.22385 6 9.5C6 9.77615 6.22386 10 6.5 10C6.77614 10 7 9.77615 7 9.5Z" fill="#A3AED0"/>
+                                        <path d="M9 9.5C9 9.22385 8.77614 9 8.5 9C8.22386 9 8 9.22385 8 9.5C8 9.77615 8.22386 10 8.5 10C8.77614 10 9 9.77615 9 9.5Z" fill="#A3AED0"/>
+                                        <path d="M11.3999 1V17" stroke="#A3AED0" stroke-linecap="round"/>
+                                        <path d="M17 8.99961C17 12.0166 17 13.5251 16.0627 14.4623C15.2122 15.3128 13.8914 15.3916 11.4 15.3989M9 2.59961H7.4C4.38301 2.59961 2.87452 2.59961 1.93726 3.53687C1 4.47413 1 5.98262 1 8.99961C1 12.0166 1 13.5251 1.93726 14.4623C2.87452 15.3996 4.38301 15.3996 7.4 15.3996H9M11.4 2.60035C13.8914 2.60764 15.2122 2.68639 16.0627 3.53687C16.5853 4.05941 16.8165 4.75952 16.9188 5.79961" stroke="#A3AED0" stroke-linecap="round"/>
+                                        </svg>
+                                        
+                                    <span key="t-settings">Change Password</span></a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-danger" href="login.html"><i
-                                        class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span
-                                        key="t-logout">Logout</span></a>
+                                <a class="dropdown-item" href="index.html">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0528 8.89474C14.2329 8.89474 16.0002 7.12744 16.0002 4.94737C16.0002 2.7673 14.2329 1 12.0528 1C9.87278 1 8.10547 2.7673 8.10547 4.94737C8.10547 5.57882 8.25373 6.17565 8.51734 6.70493C8.58744 6.84558 8.61073 7.00634 8.57015 7.15814L8.33505 8.03682C8.23297 8.41829 8.58192 8.76724 8.96339 8.66516L9.84207 8.43005C9.99389 8.38947 10.1546 8.41276 10.2953 8.48287C10.8246 8.74647 11.4214 8.89474 12.0528 8.89474Z" stroke="#A3AED0"/>
+                                        <path d="M5.46861 5.85646L5.94896 6.65981C6.38246 7.38478 6.20844 8.3358 5.52569 8.97306C5.52569 8.97306 4.69761 9.74605 6.19906 11.1475C7.70004 12.5484 8.52876 11.7759 8.52876 11.7759C9.21153 11.1387 10.2305 10.9763 11.0072 11.3809L11.8679 11.8292C13.0409 12.4401 13.1794 13.9754 12.1484 14.9376C11.529 15.5158 10.77 15.9657 9.93109 15.9954C8.51885 16.0454 6.12044 15.7118 3.71458 13.4663C1.30873 11.2208 0.951308 8.98231 1.00485 7.66421C1.03665 6.8812 1.51869 6.17289 2.13818 5.5947C3.16915 4.63246 4.81402 4.76175 5.46861 5.85646Z" stroke="#A3AED0" stroke-linecap="round"/>
+                                        </svg>
+                                        
+                                    <span key="t-logout">Support Call</span></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item d-block" href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 9H1M1 9L3.69231 7M1 9L3.69231 11" stroke="#A3AED0" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7 5.00034C7.00932 3.26017 7.08352 2.31776 7.67466 1.703C8.35068 1 9.43867 1 11.6147 1H12.384C14.56 1 15.648 1 16.324 1.703C17 2.40601 17 3.53747 17 5.80041V12.201C17 14.4639 17 15.5953 16.324 16.2983C15.7328 16.9131 14.8266 16.9903 13.1532 17M7 13.001C7.00932 14.7412 7.08352 15.6836 7.67466 16.2983C8.16804 16.8114 8.88083 16.9501 10.0758 16.9875" stroke="#A3AED0" stroke-linecap="round"/>
+                                            </svg>
+                                            
+                                            
+                                        <span key="t-settings">Logout</span></a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +255,7 @@
                             </span>
                         </a>
                     </div>
-                    <button type="button" class="btn btn-expand header-item waves-effect"
+                    <button type="button" class="btn btn-expand"
                     id="vertical-menu-btn">
                     <i class="bx bx-chevron-right"></i>
                 </button>
@@ -230,133 +267,117 @@
 
 
                         <li>
-                            <a href="home.html" class="waves-effect">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 1H1V8H8V1Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19 1H12V8H19V1Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19 12H12V19H19V12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8 12H1V19H8V12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <a href="home.html">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.65" y="0.65" width="6.16667" height="6.16667" rx="1.35" stroke="#A3B6CC" stroke-width="1.3"/>
+                                    <rect x="0.65" y="9.1832" width="6.16667" height="6.16667" rx="1.35" stroke="#A3B6CC" stroke-width="1.3"/>
+                                    <rect x="9.18345" y="0.65" width="6.16667" height="6.16667" rx="1.35" stroke="#3A3C3E" stroke-width="1.3"/>
+                                    <rect x="9.18345" y="9.1832" width="6.16667" height="6.16667" rx="1.35" stroke="#A3B6CC" stroke-width="1.3"/>
+                                    </svg>
                                     
-
+                                    
                                 <span key="t-dashboards">Dashboards</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href="my-worktime.html" class="waves-effect">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 21V11H13V21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a href="my-desktime.html">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.7998V8.9998L11 10.9998" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path opacity="0.5" d="M1 9C1 5.22876 1 3.34314 2.17158 2.17158C3.34314 1 5.22876 1 9 1C12.7712 1 14.6569 1 15.8284 2.17158C17 3.34314 17 5.22876 17 9C17 12.7712 17 14.6569 15.8284 15.8284C14.6569 17 12.7712 17 9 17C5.22876 17 3.34314 17 2.17158 15.8284C1 14.6569 1 12.7712 1 9Z" stroke="#A3B6CC" stroke-width="1.5"/>
                                 </svg>
                                     
 
-                                <span key="t-dashboards">My Work Time</span>
+                                <span key="t-dashboards">My Desk Time</span>
                             </a>
 
                         </li>
                         <li>
-                            <a href="timeline.html" class="waves-effect">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11 5V11L15 13" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a href="team-member.html">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.89479 7.73684C8.75512 7.73684 10.2632 6.22875 10.2632 4.36842C10.2632 2.50809 8.75512 1 6.89479 1C5.03446 1 3.52637 2.50809 3.52637 4.36842C3.52637 6.22875 5.03446 7.73684 6.89479 7.73684Z" stroke="#A3B6CC" stroke-width="1.5"/>
+                                    <path opacity="0.5" d="M9.84204 2.97114C10.2947 2.29043 11.0686 1.8418 11.9473 1.8418C13.3426 1.8418 14.4736 2.97287 14.4736 4.36811C14.4736 5.76335 13.3426 6.89443 11.9473 6.89443C11.0686 6.89443 10.2947 6.4458 9.84204 5.76508" stroke="#A3B6CC" stroke-width="1.5"/>
+                                    <path d="M6.89474 16.9995C10.1503 16.9995 12.7895 15.4914 12.7895 13.6311C12.7895 11.7708 10.1503 10.2627 6.89474 10.2627C3.63916 10.2627 1 11.7708 1 13.6311C1 15.4914 3.63916 16.9995 6.89474 16.9995Z" stroke="#A3B6CC" stroke-width="1.5"/>
+                                    <path opacity="0.5" d="M14.4736 11.1055C15.9509 11.4294 16.9999 12.2498 16.9999 13.2107C16.9999 14.0775 16.1463 14.83 14.8947 15.2069" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round"/>
                                 </svg>
                                     
-                                <span key="t-dashboards">Timelines</span>
+                                    
+                                    
+                                <span key="t-dashboards">Team Members</span>
                             </a>
 
                         </li>
 
                         <li>
-                            <a href="projects.html" class="waves-effect">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 1L1 6L11 11L21 6L11 1Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 16L11 21L21 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 11L11 16L21 11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a href="colleagues.html">
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.49993 7.73653C9.55127 7.73653 11.2142 6.22851 11.2142 4.36826C11.2142 2.50802 9.55127 1 7.49993 1C5.44859 1 3.78564 2.50802 3.78564 4.36826C3.78564 6.22851 5.44859 7.73653 7.49993 7.73653Z" stroke="#D1DBE5" stroke-width="1.5"/>
+                                    <path d="M10.2857 16.6761C9.44136 16.8839 8.49691 17.0002 7.5 17.0002C3.91015 17.0002 1 15.4921 1 13.6319C1 11.7717 3.91015 10.2637 7.5 10.2637C11.0899 10.2637 14 11.7717 14 13.6319C14 13.9227 13.9289 14.2049 13.7952 14.474" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round"/>
                                 </svg>
                                     
-                                <span key="t-chat">Projects</span>
+                                    
+                                <span key="t-chat">Colleagues</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="my-tasks.html" class="waves-effect">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.3699 7.87988H16.6199M5.37988 7.87988L6.12988 8.62988L8.37988 6.37988M11.3699 14.8799H16.6199M5.37988 14.8799L6.12988 15.6299L8.37988 13.3799" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8 21H14C19 21 21 19 21 14V8C21 3 19 1 14 1H8C3 1 1 3 1 8V14C1 19 3 21 8 21Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a href="screenshots.html">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.84375 8C7.72395 8 8.4375 7.32845 8.4375 6.5C8.4375 5.67157 7.72395 5 6.84375 5C5.96355 5 5.25 5.67157 5.25 6.5C5.25 7.32845 5.96355 8 6.84375 8Z" stroke="#DAE2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.25 17C9.84955 6.00498 13.6729 4.07858 18 11.2117" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.6 1H4.4C2.52223 1 1 2.59188 1 4.55556V13.4444C1 15.4081 2.52223 17 4.4 17H14.6C16.4777 17 18 15.4081 18 13.4444V4.55556C18 2.59188 16.4777 1 14.6 1Z" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                     
-                                <span key="t-file-manager">My Tasks</span>
+                                    
+                                <span key="t-file-manager">Screenshots</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 1H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6 7H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6 13H19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 1H1.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 7H1.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 13H1.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a href="reports.html">
+                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.928 11.1244C16 10.4163 16 9.52971 16 8.41073L16 6.10333C16.0002 5.24689 16.0003 4.69457 15.8513 4.17185C15.7696 3.88527 15.6552 3.60906 15.5103 3.34866C15.246 2.87368 14.8554 2.48321 14.2497 1.87775L14.1223 1.7503C13.5168 1.14459 13.1263 0.753963 12.6513 0.489701C12.3909 0.344823 12.1147 0.230411 11.8282 0.148725C11.3054 -0.000275392 10.7531 -0.000162874 9.89668 1.17372e-05L8.84911 2.38923e-05V0.00179537C8.08473 0.00637885 7.44132 0.0228046 6.89837 0.0816297C6.12592 0.16532 5.48445 0.340677 4.9329 0.741402C4.60334 0.980835 4.31353 1.27065 4.0741 1.6002C3.81891 1.95143 3.65512 2.33913 3.54819 2.7739L2.87815 2.95344C0.807292 3.50832 -0.42165 5.63692 0.133236 7.70778L1.93114 14.4176C2.48602 16.4885 4.61461 17.7174 6.68547 17.1626L11.4218 15.8934C12.3264 15.6511 13.0704 15.1084 13.5751 14.4015C13.8234 14.3149 14.0556 14.2026 14.2747 14.0562C14.6986 13.7729 15.0625 13.409 15.3458 12.9852C15.6997 12.4554 15.8542 11.8498 15.928 11.1244ZM9.90648 1.22591L9.80657 1.22589C8.57936 1.2259 7.70578 1.22719 7.03041 1.30036C6.36226 1.37275 5.96119 1.50955 5.65344 1.73315C5.42796 1.89697 5.22967 2.09526 5.06584 2.32074C4.84225 2.62849 4.70545 3.02956 4.63306 3.69771C4.55943 4.37733 4.55858 5.25767 4.55858 6.4971V8.37675C4.55858 9.5373 4.55932 10.3616 4.6243 11.0003C4.68824 11.6288 4.80926 12.0093 5.00621 12.3041C5.19999 12.5941 5.44899 12.8431 5.739 13.0369C6.03376 13.2338 6.4143 13.3549 7.0428 13.4188C7.68153 13.4838 8.50581 13.4845 9.66635 13.4845C10.8269 13.4845 11.6512 13.4838 12.2899 13.4188C12.9184 13.3549 13.2989 13.2338 13.5937 13.0369C13.8837 12.8431 14.1327 12.5941 14.3265 12.3041C14.5234 12.0093 14.6445 11.6288 14.7084 11.0003C14.7734 10.3616 14.7741 9.5373 14.7741 8.37675V6.33365C14.7741 5.93107 14.7728 5.6908 14.7497 5.51859C14.739 5.43967 14.7265 5.40015 14.7192 5.38235C14.7175 5.37823 14.7162 5.37552 14.7154 5.37394L14.7143 5.37195L14.7123 5.37083C14.7107 5.37 14.708 5.36868 14.7039 5.36698C14.6861 5.35966 14.6465 5.34716 14.5676 5.33655C14.3954 5.3134 14.1551 5.3121 13.7526 5.3121L12.8987 5.3121C12.545 5.31214 12.2207 5.31218 11.9569 5.27671C11.6664 5.23765 11.3593 5.14576 11.1068 4.89321C10.8542 4.64066 10.7623 4.3336 10.7233 4.04309C10.6878 3.77928 10.6879 3.45497 10.6879 3.10125L10.6879 2.08399C10.6879 1.7639 10.6871 1.57306 10.672 1.43366C10.6631 1.35166 10.6518 1.31807 10.6476 1.30833C10.6357 1.29231 10.6215 1.27812 10.6055 1.26621C10.5957 1.26202 10.5621 1.25071 10.4801 1.24183C10.3522 1.22798 10.1811 1.22612 9.90648 1.22591ZM11.1281 14.7029C10.6996 14.7104 10.2256 14.7104 9.70032 14.7104H9.63237C8.51339 14.7104 7.62676 14.7104 6.91873 14.6384C6.19331 14.5646 5.5877 14.4101 5.05795 14.0562C4.63409 13.7729 4.27016 13.409 3.98694 12.9852C3.63297 12.4554 3.47853 11.8498 3.40473 11.1244C3.33271 10.4163 3.33271 9.52972 3.33272 8.41075V6.46074C3.33271 5.52812 3.33271 4.74666 3.37151 4.09035L3.19543 4.13753C1.77853 4.51719 0.93767 5.9736 1.31733 7.3905L3.11523 14.1004C3.49489 15.5173 4.95129 16.3581 6.3682 15.9785L11.1046 14.7094C11.1124 14.7072 11.1202 14.7051 11.1281 14.7029ZM14.4391 3.94465C14.4676 3.99588 14.4943 4.048 14.5194 4.10093C14.301 4.08617 14.0533 4.0862 13.7891 4.08623L12.9353 4.08623C12.5327 4.08623 12.2925 4.08493 12.1203 4.06178C12.0413 4.05117 12.0018 4.03867 11.984 4.03135C11.9799 4.02965 11.9772 4.02833 11.9756 4.02751L11.9736 4.02638L11.9725 4.02439C11.9717 4.02281 11.9703 4.0201 11.9686 4.01598C11.9613 3.99818 11.9488 3.95866 11.9382 3.87975C11.9151 3.70754 11.9138 3.46726 11.9138 3.06468L11.9138 2.05515C11.9138 1.84934 11.9138 1.6559 11.9048 1.48334C11.9557 1.50758 12.006 1.53345 12.0553 1.56093C12.3623 1.73169 12.628 1.9897 13.3192 2.68085C14.0103 3.372 14.2683 3.63773 14.4391 3.94465Z" fill="#A3B6CC"/>
                                 </svg>
+                                    
+                                <span key="t-file-manager">Reports</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="exports.html">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <path d="M9.80005 8.19965L16.36 1.63965" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.9994 4.84V1H13.1594" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <path d="M8.2 1H6.6C2.6 1 1 2.6 1 6.6V11.4C1 15.4 2.6 17 6.6 17H11.4C15.4 17 17 15.4 17 11.4V9.8" stroke="#A3B6CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                    
+                                    
+                                <span key="t-file-manager">Exports</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.5" d="M5.30496 2.60188C7.10827 1.53396 8.00996 1 9 1C9.99004 1 10.8917 1.53396 12.695 2.60188L13.305 2.96308C15.1083 4.031 16.01 4.56495 16.505 5.44444C17 6.32394 17 7.39186 17 9.52773V10.25C17 12.386 17 13.4539 16.505 14.3333C16.01 15.2128 15.1083 15.7468 13.305 16.8147L12.695 17.1759C10.8917 18.2438 9.99004 18.7778 9 18.7778C8.00996 18.7778 7.10827 18.2438 5.30496 17.1759L4.69504 16.8147C2.89173 15.7468 1.99008 15.2128 1.49504 14.3333C1 13.4539 1 12.386 1 10.25V9.52773C1 7.39186 1 6.32394 1.49504 5.44444C1.99008 4.56495 2.89173 4.031 4.69504 2.96308L5.30496 2.60188Z" stroke="#818DB4" stroke-width="1.5"/>
+                                    <path d="M8.99992 12.556C10.4727 12.556 11.6666 11.3621 11.6666 9.88932C11.6666 8.41656 10.4727 7.22266 8.99992 7.22266C7.52716 7.22266 6.33325 8.41656 6.33325 9.88932C6.33325 11.3621 7.52716 12.556 8.99992 12.556Z" stroke="#A3B6CC" stroke-width="1.5"/>
+                                </svg>
+                                    
    
-                                <span key="t-ecommerce">Time Sheet</span>
+                                <span key="t-ecommerce">Settings</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="timesheet.html" key="t-p1">Overview</a></li>
-                                <li><a href="time-request.html" key="t-p2">Time Request</a></li>
-                                <li><a href="work-schedule.html" key="t-p3">Work Schedule</a></li>
-
+                                <li><a href="billing.html" key="t-p1"> <i class="bx bx-chevron-right"></i>Billing</a></li>
+                                <li><a href="profile.html" key="t-p2"> <i class="bx bx-chevron-right"></i>Profile</a></li>
+                                <li><a href="team-members.html" key="t-p3"> <i class="bx bx-chevron-right"></i>Team Members</a></li>
+                                <li><a href="team.html" key="t-p4"> <i class="bx bx-chevron-right"></i>Teams</a></li>
+                                <li><a href="account.html" key="t-p5"> <i class="bx bx-chevron-right"></i>Account</a></li>
+                                <li><a href="app-productivity.html" key="t-p6"> <i class="bx bx-chevron-right"></i>Apps Productivity</a></li>
+                                <li><a href="categories.html" key="t-p7"> <i class="bx bx-chevron-right"></i>Categories</a></li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.52 6.11H20.48M7.52 1.11V5.97M14.48 1.11V5.52M21 8V14C21 14.22 21 14.44 20.98 14.65C20.5601 14.1324 20.0295 13.7155 19.4273 13.43C18.8251 13.1445 18.1665 12.9975 17.5 13C16.44 13 15.46 13.37 14.69 13.99C14.1605 14.4085 13.7331 14.942 13.4403 15.5501C13.1475 16.1583 12.9969 16.8251 13 17.5C13 18.91 13.64 20.16 14.65 20.98C14.44 21 14.22 21 14 21H8C3 21 1 19 1 14V8C1 3 3 1 8 1H14C19 1 21 3 21 8Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22 17.5C22 18.85 21.4 20.05 20.47 20.88C19.67 21.57 18.64 22 17.5 22C16.42 22 15.42 21.62 14.65 20.98C14.1325 20.5601 13.7156 20.0295 13.43 19.4273C13.1445 18.8251 12.9976 18.1665 13 17.5C13 16.08 13.65 14.81 14.69 13.99C15.4859 13.3484 16.4777 12.999 17.5 13C18.91 13 20.16 13.64 20.98 14.65C21.62 15.42 22 16.42 22 17.5Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.7799 16.0901V17.7801L16.3799 18.6201" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span key="t-ecommerce">Activity</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="apps.html" key="t-p1">Apps</a></li>
-                                <li><a href="activity.html" key="t-p2">Captures</a></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.41016 21C1.41016 17.13 5.26016 14 10.0002 14C10.9602 14 11.8902 14.13 12.7602 14.37M10.0002 11C11.3262 11 12.598 10.4732 13.5357 9.53553C14.4734 8.59785 15.0002 7.32608 15.0002 6C15.0002 4.67392 14.4734 3.40215 13.5357 2.46447C12.598 1.52678 11.3262 1 10.0002 1C8.67407 1 7.4023 1.52678 6.46462 2.46447C5.52694 3.40215 5.00016 4.67392 5.00016 6C5.00016 7.32608 5.52694 8.59785 6.46462 9.53553C7.4023 10.4732 8.67407 11 10.0002 11Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.49 16.98H14.51M16 15.52V18.51M20 17C20 17.32 19.96 17.63 19.88 17.93C19.79 18.33 19.63 18.72 19.42 19.06C19.0675 19.6525 18.5667 20.143 17.967 20.4831C17.3674 20.8233 16.6894 21.0014 16 21C15.0155 21.0029 14.0659 20.6352 13.34 19.97C13.04 19.71 12.78 19.4 12.58 19.06C12.1993 18.4404 11.9985 17.7272 12 17C11.9994 16.4745 12.1024 15.9541 12.3031 15.4685C12.5039 14.9829 12.7985 14.5417 13.1701 14.1701C13.5417 13.7985 13.9829 13.5039 14.4685 13.3031C14.9541 13.1024 15.4745 12.9993 16 13C17.18 13 18.25 13.51 18.97 14.33C19.61 15.04 20 15.98 20 17Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                    
-                                <span key="t-file-manager">Register</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user.html" key="t-p1">User</a></li>
-                                <li><a href="team.html" key="t-p2">Team</a></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 1V4M14 1V4M1.5 8.09H18.5M17.07 19.11L14.95 17M17.05 17.02L14.93 19.14M16 22C17.0609 22 18.0783 21.5786 18.8284 20.8284C19.5786 20.0783 20 19.0609 20 18C20 16.9391 19.5786 15.9217 18.8284 15.1716C18.0783 14.4214 17.0609 14 16 14C14.9391 14 13.9217 14.4214 13.1716 15.1716C12.4214 15.9217 12 16.9391 12 18C12 19.0609 12.4214 20.0783 13.1716 20.8284C13.9217 21.5786 14.9391 22 16 22Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19 7.5V15.36C18.27 14.53 17.2 14 16 14C13.79 14 12 15.79 12 18C12 18.75 12.21 19.46 12.58 20.06C12.79 20.42 13.06 20.74 13.37 21H6C2.5 21 1 19 1 16V7.5C1 4.5 2.5 2.5 6 2.5H14C17.5 2.5 19 4.5 19 7.5Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.99495 12.7H10.0049M6.29395 12.7H6.30395M6.29395 15.7H6.30395" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                    
-                                <span key="t-ecommerce">Leaves</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="calendar.html" key="t-p1">Calendar</a></li>
-                                <li><a href="leave-approval.html" key="t-p1">Approval</a></li>
-                                <li><a href="leave-report.html" key="t-p2">Report</a></li>
-                                <li><a href="configuration.html" key="t-p3">Configuration</a></li>
-                            </ul>
-                        </li>
+                        </li>                    
 
                     </ul>
                 </div>

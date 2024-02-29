@@ -3662,7 +3662,7 @@ textarea.form-control.is-invalid {
     box-shadow: var(--bs-btn-focus-box-shadow) */
 }
 
-.btn-check:active+.btn,
+/* .btn-check:active+.btn,
 .btn-check:checked+.btn,
 .btn.active,
 .btn.show,
@@ -3670,7 +3670,7 @@ textarea.form-control.is-invalid {
     color: var(--bs-btn-active-color);
     background-color: var(--bs-btn-active-bg);
     border-color: var(--bs-btn-active-border-color)
-}
+} */
 
 .btn-check:active+.btn:focus,
 .btn-check:checked+.btn:focus,
