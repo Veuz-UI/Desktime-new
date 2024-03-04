@@ -2299,9 +2299,8 @@ progress {
 }
 
 .table>:not(caption)>*>* {
-    padding: .7rem .75rem .7rem 0rem;
+    padding: .5rem .75rem;
     background-color: white;
-    border-bottom-width: 1px;
     -webkit-box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg)
 }
@@ -5746,8 +5745,6 @@ fieldset:disabled .btn {
     color: var(--bs-pagination-focus-color);
     background-color: var(--bs-pagination-focus-bg);
     outline: 0;
-    -webkit-box-shadow: var(--bs-pagination-focus-box-shadow);
-    box-shadow: var(--bs-pagination-focus-box-shadow)
 }
 
 .active>.page-link,
@@ -6703,10 +6700,10 @@ fieldset:disabled .btn {
     width: 100%;
     color: var(--bs-modal-color);
     pointer-events: auto;
-    background-color: var(--bs-modal-bg);
+    background-color: #F0F4FC;
     background-clip: padding-box;
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
+    border-radius: 20px;
     outline: 0
 }
 
@@ -6737,13 +6734,13 @@ fieldset:disabled .btn {
     display: flex;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-box-align: center;
+    /* -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center; */
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: var(--bs-modal-header-padding);
+    padding: 20px 20px 15px;
     border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
     border-top-left-radius: var(--bs-modal-inner-border-radius);
     border-top-right-radius: var(--bs-modal-inner-border-radius)
@@ -6764,7 +6761,7 @@ fieldset:disabled .btn {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: var(--bs-modal-padding)
+    padding: 15px 20px;
 }
 
 .modal-footer {
@@ -6781,7 +6778,7 @@ fieldset:disabled .btn {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+    padding: 15px 20px;
     background-color: var(--bs-modal-footer-bg);
     border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
     border-bottom-right-radius: var(--bs-modal-inner-border-radius);
@@ -6814,6 +6811,11 @@ fieldset:disabled .btn {
     .modal-lg,
     .modal-xl {
         --bs-modal-width: 800px
+    }
+
+    .modal-md,
+    .modal-xl {
+        --bs-modal-width: 600px
     }
 }
 
@@ -15561,6 +15563,8 @@ button {
 }
 .table td{
     border-bottom-width: 0px;
+    color: #5D7285;
+    vertical-align: middle;
 }
 
 .table-dark>:not(:last-child)>:last-child>* {
