@@ -816,6 +816,22 @@ body[data-layout=horizontal] .footer {
     background-color: #87c74e !important;
 }
 
+.metismenu>li>.mm-active {
+    background-color: #87c74e !important;
+}
+
+.metismenu>li>.mm-active span{
+    color: #fff !important;
+}
+
+.metismenu>li>.mm-active.has-arrow:after{
+    color: #fff !important;
+}
+
+.metismenu>li>.mm-active svg path{
+    stroke: #fff;
+}
+
 .metismenu>li>.active svg path{
     stroke: #fff;
 }
@@ -826,6 +842,11 @@ body[data-layout=horizontal] .footer {
 
 .metismenu>li>.active:hover{
     background-color: #87c74e;
+}
+
+.metismenu>li>.sub-menu>.mm-active>.active{
+    color: #79829c !important;
+    background-color: #f1f5ff !important;
 }
 
 .menu-title {
@@ -1118,14 +1139,6 @@ body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-
 
 body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-active .active i {
     color: #2DCC70
-}
-
-body[data-sidebar=dark] .mm-active {
-    color: #2DCC70 !important
-}
-
-body[data-sidebar=dark] .mm-active>a {
-    color: #fff !important
 }
 
 /* body[data-sidebar=dark] .mm-active>a::before{
@@ -2345,8 +2358,8 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
 }
 
 .form-radio-success .form-check-input:checked {
-    border-color: #34c38f;
-    background-color: #34c38f
+    border-color: #87c64d;
+    background-color: #87c64d
 }
 
 .form-radio-success .form-check-input:checked:after {
