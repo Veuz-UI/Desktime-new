@@ -157,6 +157,36 @@ body{
     transition: 1s;
 }
 
+.btn-4{
+    background-color: #e42719;
+    color: white;
+    border: 0px;
+    font-size: 13.5px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.btn-4:hover{
+    background-color: #bf1c10;
+    transition: 1s;
+}
+
+.btn-5{
+    background-color: #aaa9bc;
+    color: white;
+    border: 0px;
+    font-size: 13.5px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.btn-5:hover{
+    background-color: #555;
+    transition: 1s;
+}
+
 .login-form .form-check{
     font-size: 13px;
 }
@@ -644,7 +674,7 @@ body{
 }
 
 .modal .form-group{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .add-new-member{
@@ -953,6 +983,11 @@ body{
 .action-btns .dlt-icn{
     width: 16px;
     height: 19px;
+}
+
+.action-btns .edit-icn{
+    width: 20px;
+    height: 20px;
 }
 
 .dlt-modal .modal-content{
@@ -1511,4 +1546,311 @@ body{
   
   .white-preview {
     background: #fff;
+  }
+
+  .update-tm-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .update-tm-price .tm-mbr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .update-tm-price .tm-mbr h6{
+    margin-bottom: 0px;
+    margin-right: 25px;
+    color: #101828;
+  }
+
+  .tm-qnty input{
+    border: 1px solid #eee;
+    width: 65px;
+    height: 28px;
+    border-radius: 3px;
+    margin: 0px 2px;
+    padding: 3px 10px;
+    text-align: center;
+  }
+
+  .update-price h6{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #101828;
+  }
+
+  .update-price p{
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+
+  .tm-qnty input[type=number]::-webkit-inner-spin-button, 
+.tm-qnty input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+margin: 0; 
+}
+
+.tm-qnty input:focus-visible {
+    outline: none;
+}
+
+.tm-qnty i{
+    cursor: pointer;
+}
+
+.tm-qnty i:hover{
+    color: #222;
+}
+
+.update-price{
+    text-align: right;
+}
+
+.btn-grp1{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 9px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.btn-3{
+    border: 0px;
+    background-color: #fff;
+    padding: 6px 15px;
+    border-radius: 5px;
+    height: 100%;
+    color: #9291A5;
+    transition: 1s;
+}
+
+.btn-3:hover{
+    background-color: #aaa9bc;
+    color: #fff;
+    transition: 1s;
+}
+
+
+.img-upload-form input{
+    display: none;
+}
+
+.img-upload-form{
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+}
+
+.img-upload-form img{
+    width: 100%;
+    height: 100%;
+    border-radius: 85px;
+    border: 6px solid #f5f5f5;
+    object-fit: cover;
+}
+
+.img-upload-form i{
+    color: #333;
+    font-size: 14px;
+    width: 36px;
+    height: 36px;
+    border: 4px solid #fff;
+    background: #E8EDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.img-upload-form i:hover{
+    background: #34c38f;
+    color: #ffffff;
+    transition: 1s;
+  }
+
+  .profile-page .card-bx{
+    margin-bottom: 20px;
+  }
+
+  .profile-page .card-bx h3{
+    font-size: 18px;
+    color: #222B45;
+    margin-bottom: 22px;
+  }
+
+  .top-pro-details{
+    padding-left: 150px;
+    margin-bottom: 20px;
+  }
+
+  .profile-page .form-group{
+    margin-bottom: 12px;
+  }
+
+  .profile-page .form-group label{
+    margin-bottom: 5px;
+    color: #222B45;
+    font-weight: 400;
+  }
+
+  .profile-page .form-control{
+    background-color: #F0F4FC;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 13px;
+    padding: 7px 18px;
+  }
+
+  .profile-page .form-control::placeholder{
+    color: #a3a3a3;
+  }
+
+  .profile-page .form-select{
+    background-color: #F0F4FC;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 13px;
+    padding: 7px 18px;
+  }
+  .mob-grp .form-select{
+    max-width: 70px;
+    padding-right: 0px;
+  }
+
+  .mob-grp .form-control{
+    padding-left: 0px;
+  }
+
+  .note-box{
+    background-color: #f0f4fc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 18px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .note-box label, .working-bx .form-check-label{
+    font-weight: 400;
+  }
+
+  .note-box i{
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    color: #FF3E14;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .note-box i:hover{
+    color: #d4300c;
+    transition: 1s;
+  }
+
+  .note-box .form-control{
+    background-color: #fff;
+  }
+
+  .wrking-days{
+    display: flex;
+    gap: 6px;
+    margin: 8px 0px;
+  }
+  .wrking-days .avatar-xs{
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+  }
+
+  .wrking-days .avatar-title{
+    border: 3px solid #E0EAFF;
+    font-size: 12px;
+  }
+
+  .wrking-days .active-bg::after , .wrking-days .inactive-bg::after{
+    display: none;
+  }
+
+  .wrkng-grp hr{
+    border-top: 1px solid #ebebeb;
+    margin: 1.5rem 0;
+  }
+
+  .wrkng-grp{
+    position: relative;
+  }
+
+  .wrkng-grp .close-wrkng-grp{
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    color: #FF3E14;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .wrkng-grp .close-wrkng-grp:hover{
+    color: #d4300c;
+    transition: 1s;
+  }
+
+  .rightside-checks h3{
+    margin-bottom: 18px;
+  }
+
+  .rightside-checks p{
+    color: #313135;
+    line-height: 25px;
+  }
+
+  .rightside-checks .form-check{
+    margin-bottom: 10px;
+  }
+
+  .rightside-checks .form-check-label{
+    font-weight: 400;
+    color: #313135;
+  }
+
+  .report-type{
+    margin: 15px 0px;
+    margin-bottom: 18px !important;
+  }
+
+  .track-type{
+    margin-top: 15px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .tm-update label{
+    margin-top: 10px;
+    margin-bottom: 8px !important;
+  }
+
+  .tm-update h6{
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  .team-detail-bx .note-box{
+    margin-top: 10px;
+  }
+
+  .track-right .rightside-checks .report-type{
+    margin-bottom: 0px !important;
   }
