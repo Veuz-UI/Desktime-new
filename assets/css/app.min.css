@@ -537,7 +537,7 @@ body[data-layout=horizontal] .page-content {
 
 .page-title-box {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     padding-top: 5px;
     justify-content: space-between;
 }

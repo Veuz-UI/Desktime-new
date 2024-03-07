@@ -1200,6 +1200,27 @@
             
 
     </script>
+     <script>
+        function makeimg(val1) {
+    
+            document.getElementById("imgfile" + val1).click();
+        }
+    
+        function previewFile(value) {
+    
+            const preview = document.getElementById('upld-image' + value);
+            const file = document.getElementById("imgfile" + value).files[0];
+            const reader = new FileReader();
+    
+            reader.addEventListener("load", function () {
+                preview.src = reader.result;
+            }, false);
+    
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
 
 <script>
     $(document).ready(function() {
