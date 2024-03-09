@@ -400,10 +400,10 @@
                             <div class="page-title-box">
                                 <div class="left-page-title">
                                     <h4><a href="home.html">Desk Time</a></h4>
-                                    <h3>Dashboard</h3>
+                                    <h3>My Desk Time</h3>
                                 </div>
                                 <div class="right-page-title">
-                                    <div class="calndr-picker me-0" id="datepicker2">
+                                    <div class="calndr-picker" id="datepicker2">
                                         <h6>February 12, 2024</h6>
                                         <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"  data-date-container="#datepicker2" data-provide="datepicker" data-date-autoclose="true">
                                             <path d="M13 20.5H9C5.22876 20.5 3.34315 20.5 2.17157 19.3284C1 18.1569 1 16.2712 1 12.5V10.5C1 6.72876 1 4.84315 2.17157 3.67157C3.34315 2.5 5.22876 2.5 9 2.5H13C16.7712 2.5 18.6569 2.5 19.8284 3.67157C21 4.84315 21 6.72876 21 10.5V12.5C21 16.2712 21 18.1569 19.8284 19.3284C19.1752 19.9816 18.3001 20.2706 17 20.3985" stroke="#1C274C" stroke-linecap="round"/>
@@ -421,36 +421,117 @@
                                         <span class="bx bx-chevron-left"></span>
                                         <span class="bx bx-chevron-right"></span>
                                     </div>
-                                  
+                                    <div class="tab-div">
+                                        <ul class="nav nav-pills" role="tablist">
+                                            <li class="nav-item waves-effect waves-light" role="presentation">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#tab-1" role="tab" aria-selected="true">
+                                                    <span>Day</span> 
+                                                </a>
+                                            </li>
+                                            <li class="nav-item waves-effect waves-light" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2" role="tab" aria-selected="false" tabindex="-1">
+                                                    <span>Week</span> 
+                                                </a>
+                                            </li>
+                                            <li class="nav-item waves-effect waves-light" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3" role="tab" aria-selected="false" tabindex="-1">
+                                                    <span>Month</span>   
+                                                </a>
+                                            </li>
+                                            <li class="nav-item waves-effect waves-light" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#tab-4" role="tab" aria-selected="false" tabindex="-1">
+                                                    <span>Year</span>    
+                                                </a>
+                                            </li>
+                                          
+                                        </ul>
+                                    </div>
+                                
                                 </div>
                               
                             </div>
                         </div>
                     </div>
-                    <div class="row tab-div">
-                        <div class="col-lg-12">
-                            <ul class="nav nav-pills" role="tablist">
-                                <li class="nav-item waves-effect waves-light" role="presentation">
-                                    <a class="nav-link active" data-bs-toggle="tab" href="#dash-1" role="tab" aria-selected="true">
-                                        <span>All Team Member</span> 
-                                    </a>
-                                </li>
-                                <li class="nav-item waves-effect waves-light" role="presentation">
-                                    <a class="nav-link" data-bs-toggle="tab" href="#dash-2" role="tab" aria-selected="false" tabindex="-1">
-                                        <span>Without Team</span> 
-                                    </a>
-                                </li>
-                               
-                              
-                            </ul>
-                        </div>
-                    
-                    </div>
+             
                     <div class="row tab-content-div">
                         <div class="col-12">
                             <div class="tab-content">
-                                <div class="tab-pane active show" id="dash-1" role="tabpanel">
-                                
+                                <div class="tab-pane active show" id="report-1" role="tabpanel">
+                                   <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 mydesk-div">
+                                        <div class="col">
+                                            <div class="report-bx pro-report">
+                                                <h3>Productive</h3> 
+                                                <h2>63.08 %</h2>
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path d="M26 3.14258V8.85686" stroke="#87C64D" stroke-width="3" stroke-linecap="round"/>
+                                                    <path d="M25.9999 25.9988L9.02441 9.04688" stroke="#C7CCD4" stroke-width="3" stroke-linecap="round"/>
+                                                    <path d="M48.8571 26H43.1428" stroke="#87C64D" stroke-width="3" stroke-linecap="round"/>
+                                                    <path d="M26 43.1426V48.8569" stroke="#87C64D" stroke-width="3" stroke-linecap="round"/>
+                                                    <path d="M8.85711 26H3.14282" stroke="#87C64D" stroke-width="3" stroke-linecap="round"/>
+                                                    <path d="M26 2C31.5526 2 36.9332 3.92526 41.2255 7.44774C45.5177 10.9702 48.4557 15.872 49.5389 21.3177C50.622 26.7637 49.7835 32.4166 47.166 37.3134C44.5486 42.2103 40.3143 46.0483 35.1843 48.1731C30.0546 50.298 24.3466 50.5783 19.0332 48.9666C13.7197 47.3548 9.12958 43.9506 6.04475 39.3337C2.95995 34.7168 1.57135 29.1734 2.11561 23.6477C2.65984 18.1218 5.10324 12.9557 9.02949 9.02943" stroke="#C7CCD4" stroke-width="3" stroke-linecap="round"/>
+                                                    </g>
+                                                    </svg>
+                                                    
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="report-bx">
+                                                <h3>Time at Work</h3> 
+                                                <h2>07h 29m </h2>
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path d="M21.69 3.99216C23.2031 3.59238 24.7967 3.59238 26.31 3.99216L27.2531 0.422328C25.1218 -0.140776 22.8781 -0.140776 20.7469 0.422328L21.69 3.99216ZM36.1282 11.8478C36.1282 6.47702 32.4723 1.80126 27.2531 0.422328L26.31 3.99216C29.9386 4.95086 32.4358 8.18356 32.4358 11.8478H36.1282ZM15.5641 11.8478C15.5641 8.18354 18.0613 4.95086 21.69 3.99216L20.7469 0.422328C15.5275 1.80126 11.8718 6.477 11.8718 11.8478H15.5641Z" fill="#87C64D"/>
+                                                    <path d="M13.7635 12.9324L16.4061 12.4229L15.7071 8.79736L13.0645 9.3069L13.7635 12.9324ZM31.594 12.4229L34.2367 12.9324L34.9358 9.30687L32.293 8.79736L31.594 12.4229ZM43.2144 21.0855L43.4434 21.8878L46.9939 20.8743L46.765 20.0724L43.2144 21.0855ZM4.55676 21.8878L4.78569 21.0855L1.2351 20.0724L1.0062 20.8743L4.55676 21.8878ZM4.56545 34.3316C3.40641 30.2701 3.39907 25.9444 4.55676 21.8878L1.0062 20.8743C-0.341838 25.5983 -0.33182 30.6258 1.01487 35.3448L4.56545 34.3316ZM43.4434 21.8878C44.601 25.9444 44.5939 30.2701 43.4347 34.3316L46.9853 35.3448C48.332 30.6258 48.3421 25.5983 46.9939 20.8743L43.4434 21.8878ZM33.4793 43.4024C27.2191 44.6096 20.7811 44.6096 14.5209 43.4024L13.8219 47.028C20.5438 48.3241 27.4563 48.3241 34.1783 47.028L33.4793 43.4024ZM16.4061 12.4229C21.4214 11.456 26.5791 11.456 31.594 12.4229L32.293 8.79736C26.8161 7.74138 21.1841 7.74138 15.7071 8.79736L16.4061 12.4229ZM14.5209 43.4024C9.73525 42.4798 5.88159 38.9436 4.56545 34.3316L1.01487 35.3448C2.71582 41.3054 7.67919 45.8436 13.8219 47.028L14.5209 43.4024ZM34.1783 47.028C40.3209 45.8436 45.2843 41.3052 46.9853 35.3448L43.4347 34.3316C42.1186 38.9436 38.265 42.4798 33.4793 43.4024L34.1783 47.028ZM34.2367 12.9324C38.5636 13.7667 42.0282 16.9284 43.2144 21.0855L46.765 20.0724C45.1908 14.5556 40.6081 10.4006 34.9358 9.30687L34.2367 12.9324ZM13.0645 9.3069C7.39195 10.4006 2.80941 14.5556 1.2351 20.0724L4.78569 21.0855C5.97203 16.9284 9.43661 13.7667 13.7635 12.9324L13.0645 9.3069ZM2.7957 23.4873C16.4675 28.5443 31.5327 28.5443 45.2046 23.4873L43.9236 20.0244C31.0783 24.7757 16.9218 24.7757 4.07661 20.0244L2.7957 23.4873Z" fill="#C7CCD4"/>
+                                                    <path d="M14.1541 20.3071V28.9225" stroke="#87C64D" stroke-width="3.75" stroke-linecap="round"/>
+                                                    <path d="M33.8462 20.3071V28.9225" stroke="#87C64D" stroke-width="3.75" stroke-linecap="round"/>
+                                                    </g>
+                                                    </svg>
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="report-bx">
+                                                <h3>Desktime</h3> 
+                                                <h2>09 h</h2>
+                                                <svg width="51" height="46" viewBox="0 0 51 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path d="M4.33325 16C4.33325 9.40033 4.33325 6.10051 6.38351 4.05025C8.43376 2 11.7336 2 18.3333 2H32.3333C38.9329 2 42.2327 2 44.2829 4.05025C46.3332 6.10051 46.3333 9.40033 46.3333 16V27.6667C46.3333 32.0664 46.3333 34.2663 44.9664 35.6331C43.5995 37 41.3997 37 36.9999 37H13.6666C9.26681 37 7.06692 37 5.7001 35.6331C4.33325 34.2663 4.33325 32.0664 4.33325 27.6667V16Z" stroke="#C7CCD4" stroke-width="3.75"/>
+                                                    <path d="M48.6667 44H2" stroke="#87C64D" stroke-width="3.75" stroke-linecap="round"/>
+                                                    <path d="M32.3333 29.9995H18.3333" stroke="#87C64D" stroke-width="3.75" stroke-linecap="round"/>
+                                                    </g>
+                                                    </svg>
+                                                    
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="report-bx">
+                                                <h3>Check In</h3> 
+                                                <h2>09:30 AM</h2>
+                                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path d="M22 42C10.9543 42 2 33.0458 2 22C2 10.9543 10.9543 2 22 2" stroke="#C7CCD4" stroke-width="3.75" stroke-linecap="round"/>
+                                                    <path d="M42 22L17 22M17 22L24.5 29.5M17 22L24.5 14.5" stroke="#87C64D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    </svg>
+                                                                                                       
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="report-bx pro-report">
+                                                <h3>Check Out</h3> 
+                                                <h2>Online</h2>
+                                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                    <path d="M22 2C33.0457 2 42 10.9542 42 22C42 33.0457 33.0457 42 22 42" stroke="#C7CCD4" stroke-width="3.75" stroke-linecap="round"/>
+                                                    <path d="M2 22L27 22M27 22L19.5 14.5M27 22L19.5 29.5" stroke="#87C64D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    </svg>                                                    
+                                                    
+                                            </div>
+                                        </div>
+                                   </div>
                                    <div class="row g-3 probar-graph-div">
                                     <div class="col-md-3">
                                         <div class="pro-wrk-graph">
@@ -510,149 +591,41 @@
                                     
                                     </div>
                                    </div>
-                                   <div class="row g-3 pro-users-div">
-                                        <div class="col-md-3">
-                                            <div class="pro-users-bx most-pro">
-                                                <h2>Most Productive <a href="productive.html">View all</a></h2>
-                                                <div class="pro-list">
-                                                    <div class="user-name">
-                                                        <div class="avatar-xs">
-                                                            <span class="avatar-title rounded-circle active-bg">
-                                                                J
-                                                            </span>
-                                                        </div>
-                                                        <h6>Jijin PH</h6>
+                                   <div class="row g-3 mydesk-graph-div">
+                                    <div class="col-md-6">
+                                        <div class="mydesk-graph">
+                                            <h2>Work/Task</h2>
+                                            <div id="column_chart" data-colors='["#87C64D","#AEE87A"]' class="apex-charts" dir="ltr"></div>     
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mydesk-graph">
+                                            <h2>App Categories</h2>
+                                            <div class="app-cat-div">
+                                                <div class="app-cat-graph">
+                                                    <div class="app-cat-1">
+                                                        <p>9%</p>
+                                                        <div class="app-cat-box"></div>
                                                     </div>
-                                                    <div class="pro-time">
-                                                        <h5>116.19%</h5>
-                                                        <h6>30m of 30m</h6>
+                                                    <div class="app-cat-2">
+                                                        <p>30%</p>
+                                                        <div class="app-cat-box"></div>
+                                                    </div>
+                                                    <div class="app-cat-3">
+                                                        <p>61%</p>
+                                                        <div class="app-cat-box"></div>
                                                     </div>
                                                 </div>
+                                                <ul class="app-cat-btm">
+                                                    <li>Office App</li>
+                                                    <li>Undefined</li>
+                                                    <li>Development</li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <div class="pro-users-bx most-unpro">
-                                                <h2>Most Unproductive <a href="unproductive.html">View all</a></h2>
-                                                <div class="pro-list d-none">
-                                                    <div class="user-name">
-                                                        <div class="avatar-xs">
-                                                            <span class="avatar-title rounded-circle noactive-bg">
-                                                                J
-                                                            </span>
-                                                        </div>
-                                                        <h6>Jijin PH</h6>
-                                                    </div>
-                                                    <div class="pro-time">
-                                                        <h5>116.19%</h5>
-                                                        <h6>5m of 30m</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="pro-empty-list">
-                                                    <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12.0448 12.3377C15.063 12.3377 17.5098 9.8909 17.5098 6.87268C17.5098 3.85446 15.063 1.40771 12.0448 1.40771C9.02658 1.40771 6.57983 3.85446 6.57983 6.87268C6.57983 9.8909 9.02658 12.3377 12.0448 12.3377Z" stroke="#CCCCCC" stroke-width="2"/>
-                                                        <path d="M22.9712 23.2677C22.9746 23.0434 22.9746 22.8155 22.9746 22.5846C22.9746 19.1891 18.0812 16.4365 12.0447 16.4365C6.00824 16.4365 1.11475 19.1891 1.11475 22.5846C1.11475 25.9801 1.11475 28.7327 12.0447 28.7327C15.0928 28.7327 17.2908 28.5186 18.8759 28.1362" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round"/>
-                                                        </svg>
-                                                    <p>No one is Unproductive</p>                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="pro-users-bx most-eff">
-                                                <h2>Most Effective <a href="most-effective.html">View all</a></h2>
-                                                <div class="pro-list">
-                                                    <div class="user-name">
-                                                        <div class="avatar-xs">
-                                                            <span class="avatar-title rounded-circle active-bg">
-                                                                J
-                                                            </span>
-                                                        </div>
-                                                        <h6>Jijin PH</h6>
-                                                    </div>
-                                                    <div class="pro-time">
-                                                        <h5>116.19%</h5>
-                                                        <h6>30m of 30m</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="pro-users-bx total-desk">
-                                                <h2>Total Desktime <a href="total-desktime.html">View all</a></h2>
-                                                <div class="pro-list">
-                                                    <div class="user-name">
-                                                        <div class="avatar-xs">
-                                                            <span class="avatar-title rounded-circle active-bg">
-                                                                J
-                                                            </span>
-                                                        </div>
-                                                        <h6>Jijin PH</h6>
-                                                    </div>
-                                                    <div class="pro-time">
-                      
-                                                        <h6>8h 30m</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    
+                                    </div>
                                    </div>
-                                   <div class="row g-3 pro-users-div">
-                                    <div class="col-md-4">
-                                        <div class="pro-users-bx most-unpro">
-                                            <h2>Late <a href="#">View all</a></h2>
-                                            <div class="pro-list">
-                                                <div class="user-name">
-                                                    <div class="avatar-xs">
-                                                        <span class="avatar-title rounded-circle noactive-bg">
-                                                            J
-                                                        </span>
-                                                    </div>
-                                                    <h6>Jijin PH</h6>
-                                                </div>
-                                                <div class="pro-time">
-                                                    <h5>116.19%</h5>
-                                                    <h6>5m</h6>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="pro-users-bx most-unpro">
-                                            <h2>Absence <a href="#">View all</a></h2>
-                                            <div class="absent-list">
-                                                <div class="user-name">
-                                                    <div class="avatar-xs">
-                                                        <span class="avatar-title rounded-circle inactive-bg">
-                                                            J
-                                                        </span>
-                                                    </div>
-                                                    <h6>Jijin PH</h6>
-                                                </div>
-                                                <div class="user-name">
-                                                    <div class="avatar-xs">
-                                                        <span class="avatar-title rounded-circle inactive-bg">
-                                                            A
-                                                        </span>
-                                                    </div>
-                                                    <h6>Anakha</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="pro-users-bx most-unpro">
-                                            <h2>Most offline time logged <a href="#">View all</a></h2>
-                                            <div class="pro-empty-list">
-                                                <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.0448 12.3377C15.063 12.3377 17.5098 9.8909 17.5098 6.87268C17.5098 3.85446 15.063 1.40771 12.0448 1.40771C9.02658 1.40771 6.57983 3.85446 6.57983 6.87268C6.57983 9.8909 9.02658 12.3377 12.0448 12.3377Z" stroke="#CCCCCC" stroke-width="2"/>
-                                                    <path d="M22.9712 23.2677C22.9746 23.0434 22.9746 22.8155 22.9746 22.5846C22.9746 19.1891 18.0812 16.4365 12.0447 16.4365C6.00824 16.4365 1.11475 19.1891 1.11475 22.5846C1.11475 25.9801 1.11475 28.7327 12.0447 28.7327C15.0928 28.7327 17.2908 28.5186 18.8759 28.1362" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round"/>
-                                                    </svg>
-                                                <p>No one is Offline</p>                   
-                                            </div>
-                                        </div>
-                                    </div>
-                                 
-                               </div>
                                    <div class="row g-3 app-pro-div">
                                     <div class="col-md-4">
                                         <div class="app-pro-bx pro-apps">
@@ -786,9 +759,67 @@
                                         </div>
                                     </div>
                                 
-                               </div>
+                                    </div>
+                                    <div class="row g-3 myscreensht-div">
+                                        <div class="myscreensht-bx">
+                                            <div class="myscreensht-head">
+                                                <h2>Screenshots</h2>
+                                                <a href="screenshots.html"><button class="btn-2" data-bs-toggle="modal" data-bs-target="#team-modal">View All<i class="fa-solid fa-angle-right ms-1"></i></button></a>
+                                            </div>
+                                            <div class="myscreensht-body">
+                                                <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+                                                    <div class="col">
+                                                        <div class="screenshot-box">
+                                                            <img src="assets/images/screenshots/1.svg" alt="" class="img-fluid">
+                                                            <div class="scrnsht-details">
+                                                                <h6>YouTube</h6>
+                                                                <h6><i class="bx bx-time-five"></i>11:11AM 21/03/22</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="screenshot-box">
+                                                            <img src="assets/images/screenshots/2.svg" alt="" class="img-fluid">
+                                                            <div class="scrnsht-details">
+                                                                <h6>VS Code</h6>
+                                                                <h6><i class="bx bx-time-five"></i>11:11AM 21/03/22</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="screenshot-box">
+                                                            <img src="assets/images/screenshots/3.svg" alt="" class="img-fluid">
+                                                            <div class="scrnsht-details">
+                                                                <h6>Google</h6>
+                                                                <h6><i class="bx bx-time-five"></i>11:11AM 21/03/22</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="screenshot-box">
+                                                            <img src="assets/images/screenshots/4.svg" alt="" class="img-fluid">
+                                                            <div class="scrnsht-details">
+                                                                <h6>VS Code</h6>
+                                                                <h6><i class="bx bx-time-five"></i>11:11AM 21/03/22</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="screenshot-box">
+                                                            <img src="assets/images/screenshots/5.svg" alt="" class="img-fluid">
+                                                            <div class="scrnsht-details">
+                                                                <h6>Gmail</h6>
+                                                                <h6><i class="bx bx-time-five"></i>11:11AM 21/03/22</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- <div class="tab-pane" id="dash-2" role="tabpanel">
+                                <!-- <div class="tab-pane" id="report-2" role="tabpanel">
                                    
                                 </div> -->
                              
@@ -848,6 +879,8 @@
         </div>
     </div>
 
+
+    <script src="https://kit.fontawesome.com/49ccdaea81.js " crossorigin="anonymous"></script>
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/js/pages/jquery-ui.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -857,9 +890,11 @@
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>       
     <script src="assets/js/pages/sparklines.init.js"></script>
     <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
     <script src="assets/js/pages/jquery.knob.min.js"></script>
     <script src="assets/js/pages/jquery-knob.init.js"></script>
+
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/apexcharts.init.js"></script>
 
     <script src="assets/libs/echarts/echarts.min.js"></script>
     <script src="assets/js/pages/echarts.init.js"></script>
@@ -983,8 +1018,6 @@ $({
          chart.draw(data, google.charts.Bar.convertOptions(options));
        }
      </script>
-
-     
 </body>
 
 </html>

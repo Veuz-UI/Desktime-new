@@ -13,6 +13,7 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet">
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light" >
@@ -426,11 +427,14 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="">Team Members</label>
-                                    <select class="form-select">
-                                        <option>Without Team</option>
-                                        <option>Team 1</option>
-                                        <option>Team 2</option>
-                                    </select>
+                                    <select multiple class="mul-select">
+                                        <option selected>Jijin</option>
+                                        <option>Arshad</option>
+                                        <option selected>Bishru</option>
+                                        <option selected>Nasim</option>
+                                        <option>Anakha</option>
+                                       
+                                      </select>
                                 </div>
                                 <div class="row tm-update">
                                     <div class="col-md-6">
@@ -1122,6 +1126,7 @@
     <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>       
     <script src="assets/js/pages/sparklines.init.js"></script>
     <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/libs/select2/js/select2.min.js"></script>
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
     <script src="assets/js/pages/apexcharts.init.js"></script>
@@ -1203,6 +1208,15 @@
             }
         });
     });
+</script>
+<script>
+    $(".mul-select").select2({
+  tags: true
+});
+
+$("ul.select2-selection__rendered").sortable({
+  containment: 'parent'
+});
 </script>
 
 </body>

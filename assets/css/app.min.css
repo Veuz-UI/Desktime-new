@@ -4607,10 +4607,6 @@ table.dataTable.dtr-inline.collapsed>tbody .usr-div h6{
     border-color: var(--bs-input-focus-border-color)
 }
 
-.apex-charts {
-    min-height: 355px !important;
-}
-
 .apex-charts text {
     font-family: var(--bs-font-inter) !important;
     fill: #adb5bd
@@ -4677,7 +4673,7 @@ table.dataTable.dtr-inline.collapsed>tbody .usr-div h6{
 }
 
 .e-charts {
-    height: 271px;
+    height: 300px;
 }
 
 .flot-charts-height {

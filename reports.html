@@ -593,7 +593,7 @@
                                                 <div class="col-md-9">
                                                     <div class="pro-bar-graph">
                                                         <h2>Productivity Bar</h2>
-    
+                                                        <div id="columnchart_material" style="width: 1200px; height: 300px;"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
@@ -979,16 +979,8 @@
     <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/pages/jquery.knob.min.js"></script>
     <script src="assets/js/pages/jquery-knob.init.js"></script>
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/js/pages/apexcharts.init.js"></script>
-    <!-- echarts js -->
-    <script src="assets/libs/echarts/echarts.min.js"></script>
-    <!-- echarts init -->
-    <script src="assets/js/pages/echarts.init.js"></script>
-    <!-- dashboard init -->
+
     <script src="assets/js/pages/dashboard.init.js"></script>
-    <!-- App js -->
     <script src="assets/js/app.js"></script>
     <script>
         $(function() {
@@ -1051,6 +1043,62 @@ $({
 
 });
     </script>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+       google.charts.load('current', {'packages':['bar']});
+       google.charts.setOnLoadCallback(drawChart);
+ 
+       function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+           
+          
+        ['Productivity Bar', 'Productive', 'Unproductive', 'Time Request', 'Idle', 'Other', { role: 'annotation' } ],
+        ['12AM', 0, 0, 0, 0, 0, ''],
+        ['1AM', 0, 0, 0, 0, 0, ''],
+        ['2AM', 0, 0, 0, 0, 0, ''],
+        ['3AM', 0, 0, 0, 0, 0, ''],
+        ['4AM', 0, 0, 0, 0, 0, ''],
+        ['5AM', 0, 0, 0, 0, 0, ''],
+        ['6AM', 0, 0, 0, 0, 0, ''],
+        ['7AM', 0, 0, 0, 0, 0, ''],
+        ['8AM', 0, 0, 0, 0, 0, ''],
+        ['9AM', 0, 0, 0, 0, 0, ''],
+        ['10AM', 90, 0, 10, 0, 0, ''],
+        ['11AM', 100, 0, 0, 0, 0, ''],
+        ['12PM', 70, 0, 0, 30, 0, ''],
+        ['1PM', 100, 0, 0, 0, 0, ''],
+        ['2PM', 85, 0, 5, 10, 0, ''],
+        ['3PM', 100, 0, 0, 0, 0, ''],
+        ['4PM', 66, 4, 30, 0, 0, ''],
+        ['5PM', 100, 0, 0, 0, 0, ''],
+        ['6PM', 25, 0, 0, 0, 75, ''],
+        ['7PM', 0, 0, 0, 0, 0, ''],
+        ['8PM', 0, 0, 0, 0, 0, ''],
+        ['9PM', 0, 0, 0, 0, 0, ''],
+        ['10PM', 0, 0, 0, 0, 0, ''],
+        ['11PM', 0, 0, 0, 0, 0, '']
+      ]);
+
+      var options = {
+        width: 1200,
+        height: 300,
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '75%' },
+        isStacked: true,
+        series: {
+                0: { color: '#87C64D' },      // Productive
+                1: { color: '#e91010' },       // Unproductive
+                2: { color: '#53ab00' },     // Time Request
+                3: { color: '#ffd952' },    // Idle
+                4: { color: '#D4D4D4' }     // Other
+            }
+      };
+ 
+         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+ 
+         chart.draw(data, google.charts.Bar.convertOptions(options));
+       }
+     </script>
 </body>
 
 </html>
