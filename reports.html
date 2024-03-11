@@ -36,7 +36,20 @@
                         </div>
                     </form>
 
-
+                    <div class="navbar-brand-box d-block d-lg-none">
+                        <a href="home.html" class="logo">
+                            <span class="logo-sm">
+                                <img src="assets/images/v.svg" alt="">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo.svg" alt="">
+                               
+                            </span>
+                        </a>
+                        <button type="button" class="btn btn-expand vertical-menu-btn" id="vertical-menu-btn">
+                            <i class="bx bx-menu"></i>
+                        </button>
+                    </div>
 
                     <div class="d-flex nav-dropdwns">
                         <div class="dropdown d-inline-block d-lg-none ms-2">
@@ -65,7 +78,6 @@
     
     
     
-    
                         <div class="dropdown d-inline-block">
                             <button type="button" class="btn header-item noti-icon waves-effect"
                                 id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -76,63 +88,51 @@
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                 aria-labelledby="page-header-notifications-dropdown">
                                 <div class="p-3">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center not-head">
                                         <div class="col">
-                                            <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                            <h6> Notifications </h6>
                                         </div>
                                         <div class="col-auto">
-                                            <a href="#!" class="small" key="t-view-all"> View All</a>
+                                            <a href="#!" class="view-not" key="t-view-all"><i class="bx bx-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div data-simplebar style="max-height: 230px;">
+                                <div data-simplebar style="max-height: 230px;" class="not-body">
                                     <a href="javascript: void(0);" class="text-reset notification-item">
                                         <div class="d-flex">
-                                            <div class="avatar-xs me-3">
-                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                    <i class="bx bx-cart"></i>
-                                                </span>
+                                            <div class="not-icn me-3">
+                                                <i class="bx bxs-circle"></i>
                                             </div>
-                                            <div class="flex-grow-1">
-                                                <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1" key="t-grammer">If several languages coalesce the
-                                                        grammar</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                            key="t-min-ago">3 min ago</span></p>
+                                            <div class="flex-grow-1 not-msg">
+                                                <h6>New message from Team Lead</h6>
+                                                <div class="not-time">
+                                                    <p><i class="mdi mdi-clock-outline"></i> <span>3 min ago</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                     <a href="javascript: void(0);" class="text-reset notification-item">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-3.jpg"
-                                                class="me-3 rounded-circle avatar-xs" alt="user-pic">
-                                            <div class="flex-grow-1">
-                                                <h6 class="mb-1">James Lemire</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1" key="t-simplified">It will seem like simplified English.
-                                                    </p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                            key="t-hours-ago">1 hours ago</span></p>
+                                            <div class="not-icn me-3">
+                                                <i class="bx bxs-circle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 not-msg">
+                                                <h6>New Task added by Team Lead</h6>
+                                                <div class="not-time">
+                                                    <p><i class="mdi mdi-clock-outline"></i> <span>1 hours ago</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                     <a href="javascript: void(0);" class="text-reset notification-item">
                                         <div class="d-flex">
-                                            <div class="avatar-xs me-3">
-                                                <span class="avatar-title bg-success rounded-circle font-size-16">
-                                                    <i class="bx bx-badge-check"></i>
-                                                </span>
+                                            <div class="not-icn me-3">
+                                                <i class="bx bxs-circle"></i>
                                             </div>
-                                            <div class="flex-grow-1">
-                                                <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1" key="t-grammer">If several languages coalesce the
-                                                        grammar</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                            key="t-min-ago">3 min ago</span></p>
+                                            <div class="flex-grow-1 not-msg">
+                                                <h6>Your time request has been accepted.</h6>
+                                                <div class="not-time">
+                                                    <p><i class="mdi mdi-clock-outline"></i> <span>3 min ago</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,23 +140,21 @@
     
                                     <a href="javascript: void(0);" class="text-reset notification-item">
                                         <div class="d-flex">
-                                            <img src="assets/images/users/avatar-4.jpg"
-                                                class="me-3 rounded-circle avatar-xs" alt="user-pic">
-                                            <div class="flex-grow-1">
-                                                <h6 class="mb-1">Salena Layfield</h6>
-                                                <div class="font-size-12 text-muted">
-                                                    <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of
-                                                        mine occidental.</p>
-                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                            key="t-hours-ago">1 hours ago</span></p>
+                                            <div class="not-icn me-3">
+                                                <i class="bx bxs-circle"></i>
+                                            </div>
+                                            <div class="flex-grow-1 not-msg">
+                                                <h6>Time request has been created.</h6>
+                                                <div class="not-time">
+                                                    <p><i class="mdi mdi-clock-outline"></i> <span>1 hours ago</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="p-2 border-top d-grid">
+                                <div class="p-2 border-top d-grid not-view-more">
                                     <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
-                                        <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View
                                             More..</span>
                                     </a>
                                 </div>
@@ -170,9 +168,9 @@
                         </div>
 
                         <div class="dropdown d-inline-block">
-                            <button type="button" class="btn header-item noti-icon waves-effect">
+                            <a href="profile.html"> <button type="button" class="btn header-item noti-icon waves-effect">
                                 <i class="bx bx-cog bx-spin"></i>
-                            </button>
+                            </button></a>
                         </div>
     
                         <div class="dropdown d-inline-block profile-dropdown">
@@ -255,7 +253,7 @@
                             </span>
                         </a>
                     </div>
-                    <button type="button" class="btn btn-expand"
+                    <button type="button" class="btn btn-expand vertical-menu-btn"
                     id="vertical-menu-btn">
                     <i class="bx bx-chevron-right"></i>
                 </button>
@@ -453,7 +451,7 @@
                         </div>
                     </div>
                     <div class="row tab-div">
-                        <div class="col-lg-6">
+                        <div class="col-lg-9">
                             <ul class="nav nav-pills" role="tablist">
                                 <li class="nav-item waves-effect waves-light" role="presentation">
                                     <a class="nav-link active" data-bs-toggle="tab" href="#report-1" role="tab" aria-selected="true">
@@ -488,8 +486,8 @@
                               
                             </ul>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="tab-right">
+                        <div class="col-lg-3">
+                            <div class="tab-right mt-mob-10">
                                 <div class="member-team">
                                     <a href="#">Member</a>
                                     <a href="#">Team</a>
@@ -590,13 +588,13 @@
                                     <div class="col-md-12">
                                         <div class="pro-bar-div">
                                             <div class="row">
-                                                <div class="col-md-9">
-                                                    <div class="pro-bar-graph">
+                                                <div class="col-lg-9 col-md-12">
+                                                    <div class="pro-bar-graph rprt-graph">
                                                         <h2>Productivity Bar</h2>
-                                                        <div id="columnchart_material" style="width: 1200px; height: 300px;"></div>
+                                                        <div id="columnchart_material"></div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
+                                                <div class="col-lg-3 col-md-12 mob-prod-box">
                                                     <div class="prod-box">
                                                         <input class="knob" data-width="80" data-height="80" data-linecap=round
                                                         data-fgColor="#05ACC2" value="92.2" data-skin="tron" data-angleOffset="0"
@@ -716,7 +714,7 @@
                                         </div>
                                    </div>
                                    <div class="row g-3 pro-users-div">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="pro-users-bx most-unpro">
                                             <h2>Late <a href="#">View all</a></h2>
                                             <div class="pro-list">
@@ -736,7 +734,7 @@
                                            
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="pro-users-bx most-unpro">
                                             <h2>Absence <a href="#">View all</a></h2>
                                             <div class="absent-list">
@@ -759,7 +757,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="pro-users-bx most-unpro">
                                             <h2>Most offline time logged <a href="#">View all</a></h2>
                                             <div class="pro-empty-list">
@@ -774,7 +772,7 @@
                                  
                                </div>
                                    <div class="row g-3 app-pro-div">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="app-pro-bx pro-apps">
                                            <h2>Productive Apps</h2>
 
@@ -834,7 +832,7 @@
                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="app-pro-bx unpro-apps">
                                             <h2>Unproductive Apps</h2>
                                             <div class="app-empty d-none">
@@ -894,7 +892,7 @@
                                                </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="app-pro-bx neutral-apps">
                                             <h2>Neutral Apps</h2>
                                             <div class="app-empty">
@@ -1081,8 +1079,6 @@ $({
       ]);
 
       var options = {
-        width: 1200,
-        height: 300,
         legend: { position: 'top', maxLines: 3 },
         bar: { groupWidth: '75%' },
         isStacked: true,
