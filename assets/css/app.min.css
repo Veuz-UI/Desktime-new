@@ -509,7 +509,7 @@ body[data-sidebar=dark] .logo-light {
     }
 
     .navbar-header .dropdown .dropdown-menu {
-        left: 10px !important;
+        /* left: 10px !important; */
         right: 10px !important
     }
 }

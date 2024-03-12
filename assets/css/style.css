@@ -2806,6 +2806,11 @@ label {
     display: flex;
     align-items: center;
 }
+.mob-tm-right-grp{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
 
 @media only screen and (max-width: 1600px) {
@@ -2951,6 +2956,23 @@ label {
     .payment2 {
         width: 50%;
     }
+    
+    .login-intro h5{
+        font-size: 45px;
+    }
+    .login-intro h2{
+        font-size: 65px;
+    }
+    .login-intro p{
+        font-size: 18px;
+        width: 75%;
+    }
+    .login-img {
+        width: 78%;
+    }
+    .login-right-div .login-form {
+        width: 72%;
+    }
 
 }
 
@@ -2969,6 +2991,42 @@ label {
 
     .card-bx {
         padding: 25px 20px;
+    }
+    .login-intro h5 {
+        font-size: 32px;
+    }
+    .login-intro h2 {
+        font-size: 46px;
+    }
+    .login-intro p {
+        font-size: 14px;
+        width: 75%;
+    }
+    .login-img {
+        width: 63%;
+    }
+    .login-form h3 {
+        font-size: 30px;
+    }
+    .login-form .form-group input{
+        height: 50px;
+        padding: 0px 22px;
+        border-radius: 10px;
+    }
+    .btn-1{
+        border: 0px;
+        font-size: 15px;
+        padding: 8px 42px;
+        border-radius: 6px;
+    }
+    .backtologin{
+        top: 70px;
+    }
+    .login-form .form-group {
+        margin-bottom: 15px;
+    }
+    .login-form .mt-33 {
+        margin-top: 25px;
     }
 }
 
@@ -3110,6 +3168,13 @@ label {
 
     .select2-container--default .select2-selection--multiple .select2-selection__rendered {
         padding: 0 0px !important;
+    }
+    .login-left-div{
+        justify-content: center;
+        gap: 70px;
+    }
+    .login-img {
+        width: 68%;
     }
 }
 
@@ -3366,6 +3431,23 @@ label {
     .sub-box .sub-img svg{
         width: 25px;
     }
+    .login-left-div{
+        padding: 70px 80px;
+    }
+    .login-intro p{
+        font-size: 15px;
+        width: 95%;
+    }
+    .login-img {
+        width: 85%;
+    }
+    .login-right-div .login-form {
+        width: 80%;
+    }
+    .backtologin {
+        top: 100px;
+        right: 70px;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -3532,9 +3614,797 @@ label {
     .mob-page-right .calndr-picker{
         margin-right: 0px;
     }
+    .working-bx .col-lg-4 {
+        width: 33%;
+    }
+    .srch-frm{
+        padding: 15px;
+    }
+    .srch-frm .btn-primary{
+        background-color: var(--main-color);
+        border-color: var(--main-color);
+        font-size: 22px;
+        padding: 0px;
+        width: 40px;
+        height: 38px;
+        border-radius: 0px 4px 4px 0px;
+        transition: 1s;
+    }
+    .srch-frm .btn-primary:hover, .srch-frm .btn-primary:focus, .srch-frm .btn-primary:active{
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        transition: 1s;
+    }
+    .login-left-div {
+        padding: 70px 35px;
+    }
+    .login-intro p {
+        font-size: 15px;
+        width: 100%;
+    }
+    .login-img {
+        width: 100%;
+    }
+    .login-intro h5 {
+        font-size: 24px;
+    }
+    .login-intro h2 {
+        font-size: 35px;
+    }
+    .logo-img {
+        width: 145px;
+    }
 
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 500px) {
+    .navbar-header{
+        height: 62px;
+    }
+    .navbar-brand-box {
+        padding: 0 0.5rem;
+    }
+    .logo {
+        line-height: 60px;
+    }
+    .navbar-brand-box img {
+        height: 24px;
+    }
+    .btn-expand {
+        width: 30px;
+        height: 28px;
+        font-size: 22px;
+        top: 18px;
+        left: 15px;
+    }
+    .header-item {
+        height: 62px;
+        padding: 0px 6px;
+    }
+    .noti-icon i {
+        font-size: 18px;
+    }
+    .header-profile-user {
+        height: 34px;
+        width: 34px;
+    }
+    .page-content {
+        padding: 75px 10px 50px 10px;
+    }
+    .srch-frm{
+        padding: 8px;
+    }
 
-@media only screen and (max-width: 425px) {}
+    .profile-dropdown .dropdown-item{
+        font-size: 12px;
+    }
+    .srch-frm .btn-primary{
+        font-size: 20px;
+        padding: 0px;
+        width: 36px;
+        height: 32px;
+    }
+    .srch-frm .form-control{
+        padding: 0.3rem 0.65rem;
+        font-size: 12px;
+    }
+    .left-page-title h4{
+        font-size: 11px;
+    margin-bottom: 5px;
+    }
+    .left-page-title h3{
+        font-size: 16px;
+    }
+    .calndr-picker h6{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .calndr-picker svg{
+        width: 18px;
+        margin-right: 0px;
+    }
+    .calndr-picker span{
+        display: none;
+    }
+    .nav-pills .nav-link {
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+    .probar-graph-div {
+        margin-top: 0px;
+    }
+    .pro-wrk-graph{
+        padding: 20px 15px 20px;
+        border-radius: 10px;
+    }
+    .pro-wrk-graph h2 {
+        font-size: 15px;
+    }
+    .pro-wrk-head{
+        align-items: flex-start;
+    }
+    .col-pro-bar-div #columnchart_material {
+        height: 180px !important;
+    }
+    .prod-box-divv{
+        gap: 10px;
+    }
+    .prod-box-divv .prod-box {
+        width: 31%;
+        padding: 15px 10px;
+    }
+    .prod-box .prod-detail h6 {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .prod-box .prod-detail h5 {
+        font-size: 14px;
+    }
+    .pro-users-div .col-md-3 {
+        width: 100%;
+    }
+    .pro-users-bx{
+        border-radius: 10px;
+    }
+    .pro-bar-div{
+        border-radius: 10px;
+        padding: 20px 17px 15px;
+    }
+    .pro-bar-graph h2 {
+        font-size: 16px;
+    }
+    .pro-users-bx h2 {
+        font-size: 15px;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .pro-users-bx h2 a {
+        font-size: 11px;
+    }
+    .pro-list .user-name h6 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .pro-list .pro-time h5 {
+        font-size: 12px;
+    }
+    .most-pro .pro-time h6{
+        font-size: 12px;
+    }
+    body[data-sidebar=dark] .vertical-menu{
+        top: 62px;
+    }
+    .pro-list {
+        padding: 4px;
+    }
+    .pro-empty-list p{
+        font-size: 13px;
+        margin: 10px 0px 5px;
+    }
+    .app-pro-bx{
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+    .app-pro-bx h2{
+        font-size: 15px;
+    }
+    .pro-apps h2::before{
+        top: -7px;
+        left: -15px;
+    height: 34px;
+    width: 4px;
+    }
+    .drag-apps .app-div .app-details .app-img {
+        width: 30px;
+        height: 30px;
+    }
+    .drag-apps .app-div .app-details h6{
+        font-size: 12px;
+    }
+    .drag-apps .app-div .app-usage h5{
+        font-size: 11px;
+    }
+    .drag-apps .app-div .app-usage i {
+        font-size: 16px;
+    }
+    .drag-apps .app-div{
+        padding: 5px;
+        margin: 6px 0px;
+    }
+    .unpro-apps h2::before, .neutral-apps h2::before{
+        left: -15px;
+    }
+    .noti-icon .new-not{
+        right: 8px;
+        top: 22px;
+    }
+    #sidebar-menu ul li a{
+        padding: 0.4rem 0.3rem;
+        font-size: 13px;
+    }
+    body[data-sidebar=dark] #sidebar-menu ul li a span{
+        padding-left: 8px;
+    }
+    #sidebar-menu ul li ul.sub-menu li a {
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        font-size: 12px;
+    }
+    #sidebar-menu ul li a i{
+        min-width: 1.8rem;
+        font-size: 1.4rem;
+    }
+    .metismenu>li {
+        padding: 0.2rem 0.5rem;
+    }
+    .vertical-menu {
+        width: 210px;
+    }
+    .right-page-title{
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .right-page-title .calndr-picker{
+        margin-right: 0px;
+    }
+    .right-page-title .nav-pills .nav-link {
+        padding: 3px 10px;
+        font-size: 11px;
+    }
+    .report-bx{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .report-bx svg {
+        width: 23%;
+        position: absolute;
+        right: 20px;
+        top: 28px;
+    }
+    .mydesk-graph{
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+    .mydesk-graph h2 {
+        font-size: 15px;
+    }
+    .app-cat-graph {
+        width: 100%;
+        gap: 8px;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    .app-cat-graph p {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    .app-cat-graph .app-cat-box{
+        height: 30px;
+        border-radius: 5px;
+    }
+    .app-empty p{
+        font-size: 13px;
+    }
+    .report-bx h2 {
+        font-size: 22px;
+    }
+    .myscreensht-bx{
+        padding: 20px 15px 20px;
+        border-radius: 10px;
+        width: 96%;
+        margin: 15px auto 0px;
+    }
+    .myscreensht-bx .myscreensht-head{
+        align-items: flex-start;
+    }
+    .myscreensht-bx .myscreensht-head h2 {
+        font-size: 15px;
+    }
+    .myscreensht-bx .btn-2{
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+    .screenshot-box{
+        border-radius: 5px;
+    }
+    .screenshot-box img{
+        border-radius: 5px;
+    }
+    .scrnsht-details h6{
+        font-size: 12px;
+    }
+    .scrnsht-details{
+        margin-top: 10px;
+    }
+    .tab-right .app-search .form-control{
+        height: 30px;
+        border-radius: 5px;
+        font-size: 12px;
+        padding-left: 33px;
+    }
+    .tab-right .app-search span {
+        line-height: 30px;
+        left: 10px;
+    }
+    .tab-right .app-search .form-control {
+        width: 310px;
+    }
+    .tab-right{
+        justify-content: space-between;
+    }
+    .tab-right svg{
+        width: 18px;
+    }
+    .table-div{
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    .table th{
+        font-size: 13px;
+        padding: 0.3rem 0.75rem;
+    }
+    .tm-mbr-tbl .table {
+        width: 300%;
+    }
+    .table td{
+        font-size: 12px;
+    }
+    .user-name .avatar-xs {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+    .table>:not(caption)>*>* {
+        padding: 0.4rem 0.7rem;
+    }
+    .table-bottom p{
+        font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    .table-bottom .pagination{
+        justify-content: center;
+    }
+    .table-bottom .pagination .page-link{
+        width: 26px;
+        height: 26px;
+    }
+    .modal-title{
+        font-size: 18px;
+    }
+    .modal label{
+        font-size: 12px;
+    }
+    .add-new-member{
+        font-size: 13px;
+    }
+    .cancel-btn, .success-btn{
+        font-size: 13px;
+        padding: 5px 14px;
+        border-radius: 5px;
+    }
+    .row-cols-sm-1 .col{
+        width: 100%;
+        flex: 1 0 100%;
+    }
+    .collg-box{
+        border-radius: 10px;
+    }
+    .mob-tab-right .app-search .form-control{
+        width: 150px;
+        font-size: 11px;
+        padding: 3px 8px;
+        padding-left: 30px;
+        height: 27px;
+    }
+    .mob-tab-right .app-search span{
+        line-height: 27px;
+    }
+    .screenshot-box img {
+        height: 180px;
+    }
+    .rprt-tab .nav-pills{
+        gap: 10px;
+        background: transparent;
+    }
+    .rprt-tab .nav-pills li{
+        background-color: #fafaff;
+        border-radius: 5px;
+    }
+    #columnchart_material{
+        height: 200px;
+        margin-top: 40px;
+    }
+    .prod-box{
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+    .mob-prod-box{
+        margin-top: 10px;
+    }
+    .prod-box-divv {
+        margin-top: 10px;
+    }
+    .prodctv-tbl .table {
+        width: 300%;
+    }
+    .unpro-tbl .table {
+        width: 300%;
+    }
+    .most-eff-tbl .table {
+        width: 300%;
+    }
+    .total-desk-tbl .table {
+        width: 300%;
+    }
+    .page-title-box{
+        align-items: center;
+    }
+    .export-bx{
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+    .export-bx h3{
+        font-size: 16px;
+    }
+    .export-bx p {
+        font-size: 13px;
+    }
+    .export-bx svg{
+        height: 38px;
+    }
+    .export-history-tbl{
+        overflow-x: auto;
+        margin-bottom: 10px;
+    }
+    .export-history-tbl .table{
+        width: 280%;
+    }
+    .backto-link{
+        font-size: 12px;
+    }
+    .exportdetail-div {
+        margin-top: 0px;
+    }
+    .exportdetail-div .exprt-box{
+        padding: 20px;
+        border-radius: 10px;
+        width: 95%;
+    }
+    .exportdetail-div .exprt-box label{
+        font-size: 12px;
+    color: #707a94;
+    font-weight: 400;
+    }
+    .radio-grp{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .radio-grp label{
+        color: #1C274C !important;
+    }
+    .save-grp {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .save-as .save-img {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+    }
+    .save-as .save-img img{
+        width: 90%;
+    }
+    .save-as h6{
+        font-size: 12px;
+    }
+    .mob-mb-10{
+        margin-bottom: 10px;
+    }
+    .card-bx {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .gift-card {
+        display: block;
+    }
+    .gift-card .gift-bx, .gift-card .coupn{
+        width: 100%;
+    }
+    .gift-card .gift-bx {
+        padding: 15px 10px;
+        font-size: 13px;
+        gap: 12px;
+    }
+    .gift-card .coupn label {
+        font-size: 13px;
+    }
+    .payment-card{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .payment2 {
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px
+    }
+    .payment1 {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    .payment1 h3{
+        font-size: 16px;
+    }
+    .payment1 p{
+        font-size: 13px;
+        margin: 16px 0px;
+    }
+    .payment2 .card-head h6{
+        font-size: 16px;
+    }
+    .payment2 h3 {
+        font-size: 20px;
+    }
+    .payment2 .card-1 h6{
+        font-size: 12px;
+    }
+    .billing-bx h2 {
+        font-size: 20px;
+        margin: 15px 0px 10px;
+    }
+    .billing-bx p {
+        font-size: 13px;
+    }
+    .faq-card h3 {
+        font-size: 16px;
+    }
+    .faq-card h3 span {
+        font-size: 12px;
+    }
+    .faq-card .accordion-button:not(.collapsed){
+        font-size: 13.5px;
+        padding-bottom: 12px;
+    }
+    .faq-card .accordion-button{
+        font-size: 13px;
+        line-height: 20px;
+        gap: 10px;
+    }
+    .faq-card .accordion-body p{
+        font-size: 12px;
+    }
+    .subscrptn-details h6{
+        font-size: 13px;
+    line-height: 25px;
+    }
+    .sub-box{
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .sub-body h2 {
+        font-size: 22px;
+    }
+    .sub-body {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        min-height: auto;
+    }
+    .sub-details h4 {
+        font-size: 14px;
+    }
+    .sub-ul li {
+        font-size: 12px;
+    }
+    .subscrptn-details h5 {
+        font-size: 14px;
+    }
+    .profile-page .card-bx h3 {
+        font-size: 16px;
+    }
+    .img-upload-form {
+        width: 120px;
+        height: 120px;
+        margin: 15px auto 20px;
+        position: relative;
+    }
+    .top-pro-details {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+    .profile-page .form-group label{
+        font-size: 12px;
+    }
+    .note-box input{
+        margin: 5px 0px;
+    }
+    .working-bx .col-lg-4 {
+        width: 100%;
+    }
+    .report-type, .track-type {
+        width: 100%;
+    }
+    .btn-2{
+        font-size: 12px;
+    padding: 6px 15px;
+    }
+    .mob-tab-row{
+        align-items: flex-end;
+    gap: 8px;
+    flex-direction: column;
+    }
+    .page-title-box .btn-2 {
+        font-size: 12px;
+        padding: 4px 13px;
+    }
+    .tm-mbrs-tbl{
+        overflow-x: auto;
+        margin-bottom: 10px;
+    }
+    .tm-mbrs-tbl .table{
+        width: 250%;
+    }
+    .mob-page-title{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .btn-grp1{
+        padding: 3px;
+        align-items: initial;
+    }
+    .btn-grp1 button{
+        font-size: 11px;
+        padding: 4px 12px;
+    }
+    .tm-tbl{
+        overflow-x: auto;
+        margin-bottom: 10px;
+    }
+    .tm-tbl .table{
+        width: 160%;
+    }
+    .mob-page{
+        flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    }
+    .mob-page .mob-page-right{
+        align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    }
+    .mob-page .cat-right-div {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .email-apps h2::before, .social-apps h2::before, .office-apps h2::before, .entertainment-apps h2::before, .news-apps h2::before, .undefined-apps h2::before {
+        left: -15px;
+    }
+    .navbar-header .dropdown .dropdown-menu{
+        min-width: 58%;
+    }
+    .profile-dropdown .dropdown-menu.show {
+        min-width: 200px !important;
+    }
+    .notification-item .d-flex {
+        padding: 0rem 1rem 0.6rem;
+    }
+    .not-icn{
+        margin-right: 10px !important;
+        font-size: 10px;
+    }
+    .not-msg h6{
+        font-size: 12.5px;
+        margin-bottom: 5px;
+    }
+    .not-time p{
+        font-size: 11px;
+    }
+    .not-view-more{
+        padding: 5px !important;
+    }
+    .not-view-more .btn-link{
+        font-size: 13px !important;
+    }
+    .view-not {
+        width: 26px;
+        height: 26px;
+    }
+    .modal-body{
+        max-height: 420px;
+    }
+    .logo-img {
+        width: 130px;
+    }
+    .login-intro p {
+        font-size: 14px;
+    }
+    .login-form .form-group input{
+        height: 46px;
+        font-size: 14px;
+    }
+    .login-bottom p{
+        font-size: 14px;
+    }
+    .login-form p{
+        font-size: 14px;
+    }
+    .backtologin {
+        top: 30px;
+        right: 30px;
+    }
+    .login-form h3 {
+        font-size: 28px;
+    }
+    .login-form .form-group input{
+        padding: 0px 15px;
+        font-size: 13px;
+    }
+    .otp-input .form-control{
+        padding: 0px 10px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 410px) {
+    .tab-right .app-search{
+        display: none;
+    }
+    .tab-right {
+        justify-content: flex-end;
+    }
+    .rprt-tab .nav-pills {
+        gap: 6px;
+        background: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    .exprt-tabs .col-mob-9{
+        width: 75%;
+    }
+    .exprt-tabs .col-mob-3{
+        width: 25%;
+    }
+    .exprt-tabs .col-mob-3 .mt-mob-10{
+        margin-top: 0px;
+    }
+    .exprt-tabs{
+        align-items: center;
+    }
+    .logo-img {
+        width: 120px;
+    }
+    .login-form .mt-33 {
+        margin-top: 15px;
+    }
+    .login-form h3 {
+        font-size: 28px;
+    }
+}
